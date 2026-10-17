@@ -146,14 +146,6 @@ a{color:var(--blue-500)}
   background:var(--yellow-soft);border-left:6px solid var(--yellow);color:var(--ink);text-align:center;
 }
 
-/* ===== Gallery ===== */
-.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
-.gallery img{
-  width:100%;height:260px;object-fit:cover;border-radius:16px;
-  box-shadow:0 10px 24px -14px rgba(16,30,107,.5);transition:transform .25s;
-}
-.gallery img:hover{transform:scale(1.03)}
-
 /* ===== Contact ===== */
 .contact{
   background:
