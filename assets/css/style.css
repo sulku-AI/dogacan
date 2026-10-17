@@ -37,7 +37,7 @@ a{color:var(--blue-500)}
   padding:12px 22px;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);
   border-bottom:1px solid rgba(16,30,107,.08);
 }
-.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--navy-900)}
+.brand{min-width:0;display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--navy-900)}
 .brand img{border-radius:50%;background:#fff}
 .brand span{font-family:var(--font-head);font-weight:800;font-size:1.35rem;line-height:1}
 .brand small{display:block;font-family:var(--font-body);font-weight:700;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--blue-500);margin-top:4px}
@@ -57,7 +57,7 @@ a{color:var(--blue-500)}
 .btn-primary{background:var(--yellow);color:var(--navy-950);box-shadow:0 12px 26px -10px rgba(255,200,61,.8)}
 .btn-primary:hover{background:#FFD65C}
 .btn-ghost{background:rgba(255,255,255,.85);color:var(--navy-900);border-color:var(--navy-900)}
-.btn-call{background:var(--navy-900);color:#fff;padding:12px 20px;font-size:1rem;box-shadow:var(--shadow-blue)}
+.btn-call{background:var(--navy-900);color:#fff;padding:12px 20px;font-size:1rem;box-shadow:var(--shadow-blue);width:auto;flex:0 0 auto}
 .btn-light{background:#fff;color:var(--navy-900)}
 
 /* ===== Hero (Atatürk centered, polaroids around) ===== */
@@ -67,8 +67,8 @@ a{color:var(--blue-500)}
   padding:90px 22px 110px;
   background:
     radial-gradient(900px 500px at 50% 0%, #FFFFFF 0%, transparent 70%),
-    radial-gradient(700px 600px at 0% 100%, var(--blue-100) 0%, transparent 70%),
-    radial-gradient(700px 600px at 100% 100%, var(--yellow-soft) 0%, transparent 70%),
+    radial-gradient(640px 520px at 0% 100%, var(--blue-100) 0%, transparent 70%),
+    radial-gradient(640px 520px at 100% 100%, var(--blue-100) 0%, transparent 70%),
     var(--cream);
 }
 .hero-bg{position:absolute;inset:0;display:flex;align-items:flex-end;justify-content:center;pointer-events:none;z-index:0}
@@ -198,7 +198,7 @@ a{color:var(--blue-500)}
   .brand span{font-size:1.1rem}
   .btn{padding:15px 22px;font-size:1.05rem;width:100%;justify-content:center}
   .cta-row{width:100%}
-  .btn-call{padding:10px 14px}
+  .btn-call{padding:10px 14px;width:auto}
   .p1,.p2,.p5,.p6{opacity:.45}
 }
 @media (prefers-reduced-motion:reduce){
